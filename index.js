@@ -1,11 +1,11 @@
-var calculatorValue = "";
-var equalsPressed = false;
-var displayElement = document.getElementById("display");
+let calculatorValue = "";
+let equalsPressed = false;
+let displayElement = document.getElementById("display");
 
-var taskList = [];
-var historyContainerElement = document.getElementsByClassName("history-container")[0];
-var showHistoryPanel = false;
-var historyListElement = document.getElementsByClassName("history-list")[0];
+let taskList = [];
+let historyContainerElement = document.getElementsByClassName("history-container")[0];
+let showHistoryPanel = false;
+let historyListElement = document.getElementsByClassName("history-list")[0];
 
 
 function keyPressed (key) { 
@@ -35,8 +35,8 @@ function removeHistory() {
 function addHistory (taskHistory) { 
     removeHistory()  
     taskList.push(taskHistory);
-    for(var i = 0; i < taskList.length; i++) {
-        var taskParagraph = document.createElement("p");
+    for(let i = 0; i < taskList.length; i++) {
+        let taskParagraph = document.createElement("p");
         taskParagraph.innerHTML = taskList[i];
         historyListElement.appendChild(taskParagraph);
     }
@@ -44,7 +44,7 @@ function addHistory (taskHistory) {
 
 function toggleHistory() {
     showHistoryPanel = !showHistoryPanel;
-    if(showHistoryPanel === true){
+    if(showHistoryPanel){
         historyContainerElement.style.top = 0;
     }
     else{

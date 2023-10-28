@@ -59,15 +59,37 @@ body{
     background: rgb(170, 42, 3) !important;
     border-top-right-radius:10px;
     border-bottom-left-radius:10px;
+    transition-duration: 0.4s;
 }
 .operator-button {
     background: rgba(102, 27, 109, 0.842) !important; 
+    transition-duration: 0.4s;
 
 }
 .equals-button {
     background: rgb(23, 3, 49) !important;
     border-top-left-radius:10px;
+    transition-duration: 0.4s;
 }
+.number-button {
+    transition-duration: 0.4s;
+}
+.number-button:hover {
+    background-color: #943ece; 
+}
+
+.cancel-button:hover {
+    background-color: #943ece !important; 
+}
+
+.operator-button:hover {
+    background-color: #943ece !important; 
+}
+
+.equals-button:hover {
+    background-color: #943ece !important; 
+}
+
 .history-upbutton {
     width: 100%;
     display: inline-block;
@@ -90,3 +112,4 @@ body{
     overflow-y: auto;
     height: 100%;
 }
+
